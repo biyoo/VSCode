@@ -18,7 +18,7 @@ class Recognition:
           cv2.imwrite('canny.jpg',canny)
           cnts,contours,hierarchy = cv2.findContours(canny, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
-          box1=[]
+          box1=  []
           f_count=0
           select=0
           plate_width=0
