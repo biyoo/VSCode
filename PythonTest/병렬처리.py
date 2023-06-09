@@ -14,9 +14,9 @@ if __name__ == "__main__":
 
     job = [("첫 번째", 10 ** 7), ("두 번째", 10 ** 7), ("세 번째", 10 ** 7), ("네 번째", 10 ** 7)]
 
-    start =  time.time()
+    start =             time.time()
     
-    process = []
+    process =   []
     for idx, count in job:
         p = Process(target=task, args=(idx, count))
         p.start()
